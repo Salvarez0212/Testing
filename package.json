@@ -1,0 +1,17 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "robot.js",
+  "scripts": {
+    "dev": "node src/robot.js",
+    "test": "jest src/",
+    "test:watch": "jest --watch src/",
+    "test:coverage": "jest --watch --coverage src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
