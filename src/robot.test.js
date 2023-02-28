@@ -2,8 +2,12 @@ const { createRobot } = require('./robot.js');
 
 describe('Robot', () => {
 	it('Should advance and change orientation and position', () => {
-		let robot = createRobot(0, 0);
-		expect(robot.advance()).toBe(1);
+		let robotN = createRobot(0, 0);
+		expect(robotN.advance()).toBe(1);
+		let robotS = createRobot(5, 2, 'S');
+		expect(robotS.advance()).toBe(1);
+		let robotW = createRobot(5, 2, 'W');
+		expect(robotW.advance()).toBe(4);
 	});
 
 	it('Should turn right and change orientation', () => {
